@@ -1,7 +1,7 @@
 ## React TypeScript Boilerplate
 This is minimal React + TypeScript + Webpack boilerplate to get you up and running with your next project!
 
-It includes:
+It includes (see package.json for more details):
 
  - Babel 7 🅱️
  - ESLint with: 🧹
@@ -11,7 +11,7 @@ It includes:
  - Webpack and Webpack Dev Server with hot reload 🧳
  - React 16.9 ⚛️
 
-And that's it! This boilerplate works out-of-the-box. Naturally, if you need to add additional packages, it's up to you!
+And that's pretty much it! This boilerplate works out-of-the-box. Naturally, if you need to add additional packages, it's up to you!
 
 ## Usage
 Simply clone this project with:
