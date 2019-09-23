@@ -17,7 +17,7 @@ And that's pretty much it! This boilerplate works out-of-the-box. Naturally, if 
 Simply clone this project with:
 `git clone https://github.com/rdcavanha/react-typescript-boilerplate.git`
 
-Then open the terminal/command line and then type:
+Then open the terminal/command line and type:
 ```
 npm i
 npm start
