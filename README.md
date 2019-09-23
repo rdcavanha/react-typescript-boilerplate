@@ -17,13 +17,13 @@ And that's it! This boilerplate works out-of-the-box. Naturally, if you need to 
 Simply clone this project with:
 `git clone https://github.com/rdcavanha/react-typescript-boilerplate.git`
 
-Then open the terminal/command line and:
+Then open the terminal/command line and then type:
 ```
 npm i
 npm start
 ```
 
-To start a new project based on this boilerplate, simply remove the .git configuration folder and don't forget to change its name and description in `package.json` file!
+To start a new project based on this boilerplate, simply remove the `.git` configuration folder and don't forget to change its name and description in the `package.json` file!
 
 ## License
 MIT
