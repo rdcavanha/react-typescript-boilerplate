@@ -3,7 +3,7 @@ import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 
-module.exports = (_env, options): webpack.Configuration => {
+const createConfiguration: webpack.ConfigurationFactory = (_env, options) => {
   const isDev = options.mode !== 'production';
 
   return {
@@ -36,3 +36,5 @@ module.exports = (_env, options): webpack.Configuration => {
     ],
   };
 };
+
+export default createConfiguration;
