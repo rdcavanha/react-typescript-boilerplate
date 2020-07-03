@@ -9,7 +9,7 @@ It includes (see package.json for more details):
 	 - TypeScript ⌨️
 	 - Airbnb 🛏️
  - Webpack and Webpack Dev Server with hot reload 🧳
- - React 16.9 ⚛️
+ - React 16 ⚛️
 
 And that's pretty much it! This boilerplate works out-of-the-box. Naturally, if you need to add additional packages, it's up to you!
 
