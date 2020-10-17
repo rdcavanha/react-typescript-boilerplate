@@ -1,6 +1,6 @@
 const typeScriptFileExtensions = ['.ts', '.tsx'];
-const javascriptFileExtensions = ['.js', '.jsx'];
-const allScriptFileExtensions = [...javascriptFileExtensions, ...typeScriptFileExtensions];
+const javaScriptFileExtensions = ['.js', '.jsx'];
+const allScriptFileExtensions = [...javaScriptFileExtensions, ...typeScriptFileExtensions];
 
 module.exports = {
   parser: '@typescript-eslint/parser',
@@ -27,6 +27,10 @@ module.exports = {
   rules: {
     '@typescript-eslint/ban-ts-ignore': 'off',
     'react/jsx-filename-extension': ['error', { extensions: allScriptFileExtensions }],
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
   },
   overrides: [
     {
