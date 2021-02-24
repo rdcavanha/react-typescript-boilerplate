@@ -32,6 +32,16 @@ module.exports = {
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
     'import/prefer-default-export': 'off',
+    'react/prop-types': 'off',
+    'no-useless-constructor': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
   },
   overrides: [
     {
