@@ -1,9 +1,9 @@
 import path from 'path';
-import webpack from 'webpack';
+import { Configuration, WebpackOptionsNormalized } from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 
-const createConfiguration = (_: any, options: webpack.WebpackOptionsNormalized): webpack.Configuration => {
+const createConfiguration = (_: any, options: WebpackOptionsNormalized): Configuration => {
   const isDev = options.mode !== 'production';
 
   return {
