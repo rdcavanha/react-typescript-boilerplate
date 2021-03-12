@@ -8,10 +8,8 @@ It includes (see package.json for more details):
 	 - Prettier 💅
 	 - TypeScript ⌨️
 	 - Airbnb 🛏️
- - Webpack 4 and Webpack Dev Server with hot reload 🧳
- - React 16 ⚛️
- 
- NOTE: Webpack version 5 will be implemented once it's compatible with other packages
+ - Webpack 5 with hot reload 🧳
+ - React 17 ⚛️
 
 And that's pretty much it! This boilerplate works out-of-the-box. Naturally, if you need to add additional packages, it's up to you!
 
