@@ -13,7 +13,7 @@ It includes (see package.json for more details):
 
 And that's pretty much it! This boilerplate works out-of-the-box. Naturally, if you need to add additional packages, it's up to you!
 
-Note: This branch, as the name says, uses Webpack 5. While version 5 has been officially released, there are still some minor issues that need to be iron out. If you encounter any issues, please switch to master, which user Webpack 4.
+Note: This branch, as the name says, uses Webpack 5. While version 5 has been officially released, there are still some minor issues that need to be iron out. If you encounter any issues, please switch to master, which uses Webpack 4.
 ## Usage
 Simply clone this project with:
 `git clone -b webpack-5 https://github.com/rdcavanha/react-typescript-boilerplate.git`
