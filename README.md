@@ -11,7 +11,7 @@ It includes (see package.json for more details):
  - Webpack 4 and Webpack Dev Server with hot reload 🧳
  - React 17 ⚛️
  
- Note: If you prefer the newest version 5 of Webpack, please refer to the `webpack-5` branch of this project
+ Note: If you prefer the newest version 5 of Webpack, please refer to the `webpack-5` branch of this project.
 
 And that's pretty much it! This boilerplate works out-of-the-box. Naturally, if you need to add additional packages, it's up to you!
 
