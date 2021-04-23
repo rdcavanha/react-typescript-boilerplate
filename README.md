@@ -9,7 +9,7 @@ It includes (see package.json for more details):
 	 - TypeScript ⌨️
 	 - Airbnb 🛏️
  - Webpack 4 and Webpack Dev Server with hot reload 🧳
- - React 17 ⚛️
+ - React 16 ⚛️
  
  Note: If you prefer the newest version 5 of Webpack, please refer to the `webpack-5` branch of this project.
 
