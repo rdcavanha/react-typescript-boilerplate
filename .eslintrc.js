@@ -5,13 +5,7 @@ const allScriptFileExtensions = [...javaScriptFileExtensions, ...typeScriptFileE
 module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'import'],
-  extends: [
-    'airbnb',
-    'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'prettier/react',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['airbnb', 'plugin:@typescript-eslint/recommended', 'prettier', 'plugin:prettier/recommended'],
   settings: {
     'import/extensions': allScriptFileExtensions,
     'import/parsers': {
