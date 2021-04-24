@@ -1,4 +1,4 @@
-## React TypeScript Boilerplate (with Webpack 5)
+## React TypeScript Boilerplate
 This is minimal React + TypeScript + Webpack boilerplate to get you up and running with your next project!
 
 It includes (see package.json for more details):
