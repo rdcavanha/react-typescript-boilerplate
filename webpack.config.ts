@@ -3,7 +3,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
 import { Configuration, WebpackOptionsNormalized, WebpackPluginInstance } from 'webpack';
 
-const createConfiguration = (_: any, options: WebpackOptionsNormalized): Configuration => {
+const createConfiguration = (_: unknown, options: WebpackOptionsNormalized): Configuration => {
   const isDev = options.mode !== 'production';
 
   return {
@@ -33,7 +33,7 @@ const createConfiguration = (_: any, options: WebpackOptionsNormalized): Configu
         template: './src/index.html',
       }),
       // Casting is necessary until plugin fixes types for Wepback 5
-      new CleanWebpackPlugin() as unknown as WebpackPluginInstance, 
+      new CleanWebpackPlugin() as unknown as WebpackPluginInstance,
     ],
   };
 };
