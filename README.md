@@ -15,7 +15,9 @@ And that's pretty much it! This boilerplate works out-of-the-box. Naturally, if 
 
 ## Usage
 Simply clone this project with:
-`git clone https://github.com/rdcavanha/react-typescript-boilerplate.git my-app`
+```
+git clone https://github.com/rdcavanha/react-typescript-boilerplate.git my-app
+```
 
 Then open the terminal/command line and type:
 ```
