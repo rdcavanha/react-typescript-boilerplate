@@ -15,7 +15,7 @@ And that's pretty much it! This boilerplate works out-of-the-box. Naturally, if 
 
 ## Usage
 Simply clone this project with:
-`git clone -b webpack-5 https://github.com/rdcavanha/react-typescript-boilerplate.git`
+`git clone https://github.com/rdcavanha/react-typescript-boilerplate.git`
 
 Then open the terminal/command line and type:
 ```
