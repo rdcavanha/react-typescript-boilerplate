@@ -4,7 +4,7 @@
     "outDir": "./dist/",
     "moduleResolution": "node",
     "sourceMap": true,
-    "allowJs": true,
+    "allowJs": false,
     "noEmit": false,
     "strict": true,
     "esModuleInterop": true,
@@ -24,16 +24,18 @@
     "importHelpers": false,
     "resolveJsonModule": true,
     "lib": [
-      "es2015",
+      "dom",
       "dom.iterable",
-      "es2016.array.include",
-      "es2017.object",
-      "dom"
+      "esnext"
     ],
     "typeRoots": [
       "./node_modules/@types"
     ]
   },
+  "include": [
+    "src",
+    ".eslintrc.js"
+  ],
   "exclude": [
     "node_modules"
   ]

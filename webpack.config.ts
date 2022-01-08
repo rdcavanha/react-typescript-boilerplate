@@ -1,7 +1,7 @@
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
-import { Configuration, WebpackOptionsNormalized, WebpackPluginInstance } from 'webpack';
+import { Configuration, WebpackOptionsNormalized } from 'webpack';
 
 const createConfiguration = (_: unknown, options: WebpackOptionsNormalized): Configuration => {
   const isDev = options.mode !== 'production';
@@ -32,8 +32,7 @@ const createConfiguration = (_: unknown, options: WebpackOptionsNormalized): Con
       new HtmlWebpackPlugin({
         template: './src/index.html',
       }),
-      // Casting is necessary until plugin fixes types for Wepback 5
-      new CleanWebpackPlugin() as unknown as WebpackPluginInstance,
+      new CleanWebpackPlugin(),
     ],
   };
 };
