@@ -1,33 +1,23 @@
-const typeScriptFileExtensions = ['.ts', '.tsx'];
-const javaScriptFileExtensions = ['.js', '.jsx'];
-const allScriptFileExtensions = [...javaScriptFileExtensions, ...typeScriptFileExtensions];
-
 module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'import'],
   extends: ['airbnb', 'plugin:@typescript-eslint/recommended', 'prettier', 'plugin:prettier/recommended'],
   settings: {
-    'import/extensions': allScriptFileExtensions,
+    'import/extensions': ['.ts', '.tsx'],
     'import/parsers': {
-      '@typescript-eslint/parser': typeScriptFileExtensions,
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
     'import/resolver': {
       node: {
-        extensions: allScriptFileExtensions,
+        extensions: ['.ts', '.tsx'],
       },
       typescript: {},
     },
   },
   rules: {
-    '@typescript-eslint/ban-ts-ignore': 'off',
-    'react/jsx-filename-extension': ['error', { extensions: allScriptFileExtensions }],
-    'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': ['error'],
-    'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': ['error'],
+    'react/react-in-jsx-scope': 'off',
+    'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
     'import/prefer-default-export': 'off',
-    'react/prop-types': 'off',
-    'no-useless-constructor': 'off',
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -39,10 +29,15 @@ module.exports = {
   },
   overrides: [
     {
+      files: ['*.tsx'],
+      rules: {
+        'react/jsx-filename-extension': 'off',
+      },
+    },
+    {
       files: ['webpack.config.ts'],
       rules: {
         'import/no-extraneous-dependencies': 'off',
-        '@typescript-eslint/no-explicit-any': 'off',
       },
     },
   ],
