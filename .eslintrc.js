@@ -20,6 +20,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'arrow-body-style': ['error', 'as-needed'],
     'react/jsx-props-no-spreading': 'off',
+    'no-use-before-define': ['error', { functions: false }],
     'jsx-a11y/label-has-associated-control': [
       'error',
       {
