@@ -11,6 +11,7 @@ It includes (see package.json for more details):
  - Webpack 5 with hot reload 🧳
  - React 17 ⚛️
  - Jest 27 ✔
+ - React Testing Library 12 🐙
 
 And that's pretty much it! This boilerplate works out-of-the-box. Naturally, if you need to add additional packages, it's up to you!
 
