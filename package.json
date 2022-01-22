@@ -7,7 +7,7 @@
     "start": "webpack serve --config webpack.config.ts --mode development --open --hot",
     "build": "webpack --config webpack.config.ts --mode production",
     "check-types": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Rodrigo Cavanha",
   "license": "MIT",
