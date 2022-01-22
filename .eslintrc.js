@@ -54,7 +54,7 @@ module.exports = {
       },
     },
     {
-      files: ['webpack.config.ts'],
+      files: ['*.test.ts', '*.test.tsx', './*.ts'],
       rules: {
         'import/no-extraneous-dependencies': 'off',
       },
