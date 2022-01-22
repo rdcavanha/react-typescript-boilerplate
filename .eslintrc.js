@@ -18,6 +18,24 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
     'import/prefer-default-export': 'off',
+    'arrow-body-style': ['error', 'as-needed'],
+    'react/jsx-props-no-spreading': 'off',
+    'jsx-a11y/label-has-associated-control': [
+      'error',
+      {
+        required: {
+          some: ['nesting', 'id'],
+        },
+      },
+    ],
+    'jsx-a11y/label-has-for': [
+      'error',
+      {
+        required: {
+          some: ['nesting', 'id'],
+        },
+      },
+    ],
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -32,6 +50,7 @@ module.exports = {
       files: ['*.tsx'],
       rules: {
         'react/jsx-filename-extension': 'off',
+        'react/prop-types': 'off',
       },
     },
     {
