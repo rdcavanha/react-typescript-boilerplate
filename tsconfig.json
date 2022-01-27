@@ -34,8 +34,8 @@
   },
   "include": [
     "src",
-    "./.eslintrc.js",
-    "./jest-setup.ts"
+    "./jest-setup.ts",
+    "./.eslintrc.js"
   ],
   "exclude": [
     "node_modules"
