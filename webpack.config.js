@@ -1,9 +1,8 @@
-import { CleanWebpackPlugin } from 'clean-webpack-plugin';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import path from 'path';
-import { Configuration, WebpackOptionsNormalized } from 'webpack';
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
-const createConfiguration = (_: unknown, options: WebpackOptionsNormalized): Configuration => {
+module.exports = (_, options) => {
   const isDev = options.mode !== 'production';
 
   return {
@@ -36,5 +35,3 @@ const createConfiguration = (_: unknown, options: WebpackOptionsNormalized): Con
     ],
   };
 };
-
-export default createConfiguration;
