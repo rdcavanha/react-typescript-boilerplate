@@ -9,11 +9,11 @@ module.exports = (_, options) => {
     entry: './src/index',
     devtool: isDev ? 'source-map' : false,
     output: {
-      path: path.join(__dirname, '/dist'),
+      path: path.join(__dirname, 'dist'),
       filename: 'bundle.[contenthash].js',
     },
     resolve: {
-      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+      modules: ['./src', './node_modules'],
       extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
     },
     module: {
