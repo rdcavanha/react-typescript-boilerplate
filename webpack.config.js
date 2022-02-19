@@ -10,7 +10,7 @@ module.exports = (_, options) => {
     devtool: isDev ? 'source-map' : false,
     output: {
       path: path.join(__dirname, '/dist'),
-      filename: 'bundle.js',
+      filename: 'bundle.[contenthash].js',
     },
     resolve: {
       modules: [path.resolve(__dirname, './src'), 'node_modules'],
