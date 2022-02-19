@@ -13,7 +13,7 @@ module.exports = (_, options) => {
       filename: 'bundle.[contenthash].js',
     },
     resolve: {
-      modules: [path.resolve(__dirname, './src'), 'node_modules'],
+      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
       extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
     },
     module: {
