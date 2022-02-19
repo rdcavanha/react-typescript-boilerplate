@@ -42,14 +42,24 @@ module.exports = {
         tsx: 'never',
       },
     ],
-    'no-console': ['error', { allow: ['error'] }],
     'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
+    'react/jsx-props-no-spreading': 'off',
+    'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
-    'import/prefer-default-export': 'off',
     'arrow-body-style': ['error', 'as-needed'],
+    'import/no-default-export': 'error',
+    'import/prefer-default-export': 'off',
     'import/no-unresolved': 'error',
   },
   overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      rules: {
+        'no-undef': 'off',
+        'react/prop-types': 'off',
+        'no-unused-vars': 'off',
+      },
+    },
     {
       files: ['*.test.ts', '*.test.tsx', './*.ts', '**/__tests__/*.*'],
       rules: {
