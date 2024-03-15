@@ -1,3 +1,6 @@
+## Archived
+Project is no longer being maintained. Better alternatives such as [Vite](https://vitejs.dev) are recommended.
+
 ## React TypeScript Boilerplate
 This is minimal React + TypeScript + Webpack boilerplate to get you up and running with your next project!
 
